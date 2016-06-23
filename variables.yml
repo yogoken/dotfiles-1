@@ -1,0 +1,8 @@
+homebrew_package_names:
+  - cmake
+  - mysql
+  - node
+  - rbenv
+  - readline
+  - redis
+  - ruby-build

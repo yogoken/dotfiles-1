@@ -1,5 +1,0 @@
-resources:
-  - type: package
-    name: mysql
-  - type: package
-    name: redis
