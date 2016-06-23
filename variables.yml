@@ -6,7 +6,6 @@ dotfiles:
   - .gitconfig
   - .gitignore
   - .gvimrc
-  - .vim/
   - .vimrc
   - .zshrc
 homebrew_cask_package_names:
