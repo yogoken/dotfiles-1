@@ -37,23 +37,19 @@ homebrew_cask_package_names:
 homebrew_package_names:
   - caskroom/cask/brew-cask
   - cmake
-  - cmigemo
-  - fish
   - gnu-sed
   - hub
   - icu4c
   - imagemagick
   - jq
-  - lua
-  - macvim
   - motemen/ghq/ghq
   - mysql
   - node
   - openssl
   - peco
-  - pyenv
   - rbenv
   - rbenv-default-gems
+  - pyenv
   - readline
   - reattach-to-user-namespace
   - redis
@@ -61,8 +57,15 @@ homebrew_package_names:
   - tig
   - tmux
   - tree
+  - lua
   - vim
+  - fish
   - zsh
+  - postgresql
+  - coreutils
+  - elixir
+  - cmigemo
+  - macvim
 login_item_names:
   - 'Alfred 3'
   - Dropbox
