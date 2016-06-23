@@ -52,3 +52,5 @@ resources:
     destination: /Users/<%= user %>/src/github.com/<%= dotfiles_repository %>/linked/<%= path %>
     source: /Users/<%= user %>/<%= path %>
   <%- end -%>
+  - type: command
+    script: echo "/usr/local/bin/zsh" | sudo tee -a /etc/shells
