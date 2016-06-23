@@ -1,0 +1,9 @@
+.DS_Store
+
+# Vi/Vim backup files
+*~
+*.swp
+*.swo
+
+# idea backup files
+.idea/
