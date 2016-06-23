@@ -63,3 +63,10 @@ homebrew_package_names:
   - tree
   - vim
   - zsh
+login_item_names:
+  - 'Alfred 3'
+  - Dropbox
+  - HyperSwitch
+  - Karabiner
+  - PopHub
+  - Spectacle
