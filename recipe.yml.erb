@@ -54,3 +54,6 @@ resources:
   <%- end -%>
   - type: command
     script: echo "/usr/local/bin/zsh" | sudo tee -a /etc/shells
+  - type: command
+    check_script: "finger -l | grep -E 'Shell: /usr/local/bin/zsh$'"
+    script: sudo chsh -s /usr/local/bin/zsh <%= user %>
