@@ -1,8 +1,29 @@
 homebrew_package_names:
+  - caskroom/cask/brew-cask
   - cmake
+  - cmigemo
+  - fish
+  - gnu-sed
+  - hub
+  - icu4c
+  - imagemagick
+  - jq
+  - lua
+  - macvim
+  - motemen/ghq/ghq
   - mysql
   - node
+  - openssl
+  - peco
+  - pyenv
   - rbenv
+  - rbenv-default-gems
   - readline
+  - reattach-to-user-namespace
   - redis
   - ruby-build
+  - tig
+  - tmux
+  - tree
+  - vim
+  - zsh
