@@ -1,4 +1,7 @@
 resources:
+  - type: git
+    repository: git@github.com:sa-inu/dotfiles.git
+    path: /Users/<%= ENV['USER'] %>/src/github.com/sa-inu/dotfiles
   <%- homebrew_package_names.each do |homebrew_package_name| -%>
   - type: package
     name: <%= homebrew_package_name %>
