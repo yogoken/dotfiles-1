@@ -28,11 +28,11 @@ if [ "$?" -ne 0 ]; then
 fi
 
 # Install serverkit and its dependencies
-sudo which bundle > /dev/null || sudo gem install bundler
-sudo bundle install > /dev/null
+which bundle > /dev/null || gem install bundler
+bundle install > /dev/null
 
 # Run installer
-sudo bundle exec serverkit apply recipe.yml.erb --variables=variables.yml
+bundle exec serverkit apply recipe.yml.erb --variables=variables.yml
 
 # Move to original path
 popd > /dev/null
