@@ -1,7 +1,4 @@
 resources:
-  - type: git
-    repository: git@github.com:sa-inu/dotfiles.git
-    path: /Users/<%= ENV['USER'] %>/src/github.com/sa-inu/dotfiles
   - type: command
     script: brew update
   <%- homebrew_package_names.each do |homebrew_package_name| -%>
@@ -40,10 +37,18 @@ resources:
   - type: defaults
     domain: com.apple.screencapture
     key: location
-    value: ~/Pictures/captures/
+    value: ~/pictures/captures/
   - type: defaults
     key: com.apple.sound.beep.feedback
     value: 1
   - type: defaults
-    key: AppleKeyboardUIMode
-    value: 3 # Allow full keyboard access
+    key: applekeyboarduimode
+    value: 3 # allow full keyboard access
+  - type: git
+    repository: git@github.com:<%= dotfiles_repository %>.git
+    path: /Users/<%= user %>/src/github.com/<%= dotfiles_repository %>
+  <%- dotfiles.each do |path| -%>
+  - type: symlink
+    destination: /Users/<%= user %>/src/github.com/<%= dotfiles_repository %>/linked/<%= path %>
+    source: /Users/<%= user %>/<%= path %>
+  <%- end -%>
