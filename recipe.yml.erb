@@ -62,7 +62,7 @@ resources:
   - type: command
     check_script: "finger -l | grep -E 'Shell: /usr/local/bin/zsh$'"
     script: sudo chsh -s /usr/local/bin/zsh <%= user %>
-  handlers:
+handlers:
   - id: restart_dock
     type: command
     script: killall Dock
