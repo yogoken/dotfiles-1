@@ -1,3 +1,28 @@
+homebrew_cask_package_names:
+  - 1password
+  - alfred
+  - atom
+  - dropbox
+  - evernote
+  - firefox
+  - github-desktop
+  - google-chrome
+  - google-japanese-ime
+  - gyazo
+  - hyperswitch
+  - iterm2
+  - karabiner
+  - pophub
+  - rubymine
+  - sequel-pro
+  - skitch
+  - skype
+  - slack
+  - spectacle
+  - sublime-text
+  - vagrant
+  - virtualbox
+  - webstorm
 homebrew_package_names:
   - caskroom/cask/brew-cask
   - cmake
