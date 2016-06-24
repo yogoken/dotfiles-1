@@ -91,6 +91,7 @@ NeoBundle 'mrkn/mrkn256.vim'
 NeoBundle 'jpo/vim-railscasts-theme'
 NeoBundle 'therubymug/vim-pyte'
 NeoBundle 'w0ng/vim-hybrid'
+NeoBundle 'abra/vim-obsidian'
 
 
 NeoBundle 'vim-scripts/AnsiEsc.vim'
@@ -514,7 +515,7 @@ endif
 " 色
 """"""""""""""""""""""""""""""""""""""
 "{{{
-colorscheme hybrid
+colorscheme obsidian2
 set background=dark
 "コードの色分け
 syntax enable
