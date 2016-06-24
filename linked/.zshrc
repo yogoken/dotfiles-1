@@ -15,6 +15,13 @@ export PYENV_ROOT=$HOME/.pyenv
 export PATH=$PYENV_ROOT/bin:$PATH
 eval "$(pyenv init - zsh)"
 
+# go
+if [ -x "`which go`" ]; then
+  export GOROOT=`go env GOROOT`
+  export GOPATH=$HOME/code/go-local
+  export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+fi
+
 # Vi ライクな操作を有効にする
 bindkey -v
 
