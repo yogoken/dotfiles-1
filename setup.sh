@@ -1,8 +1,8 @@
 #!/bin/bash
 
-DOT_FILES=(.bashrc .bash_profile .zshrc .vimrc .gvimrc .gitconfig .gitignore .vim)
+DOT_FILES=(.bashrc .bash_profile .zshrc .vimrc .gvimrc .gitconfig .gitignore .vim .tmux.conf)
 
 for file in ${DOT_FILES[@]}
 do
-  ln -s $HOME/dotfiles/linked/$file $HOME/$file
+  ln -s $HOME/src/github.com/sa-inu/dotfiles/linked/$file $HOME/$file
 done
