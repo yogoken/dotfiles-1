@@ -23,6 +23,7 @@ homebrew_cask_package_names:
   - iterm2
   - karabiner
   - pophub
+  - postman
   - rubymine
   - sequel-pro
   - skitch
