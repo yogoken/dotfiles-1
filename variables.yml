@@ -68,6 +68,7 @@ homebrew_package_names:
   - macvim
   - go
   - heroku-toolbelt
+  - git
 login_item_names:
   - 'Alfred 3'
   - Dropbox
