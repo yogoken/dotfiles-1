@@ -15,9 +15,10 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundleLazy 'mattn/emmet-vim', {
 \'autoload': { 'filetypes': ['html'] },
 \}
-NeoBundle 'taichouchou2/html5.vim', {
-\'autoload': { 'filetypes': ['html'] },
-\}
+" バグのためコメントアウト
+" NeoBundle 'taichouchou2/html5.vim', {
+" \'autoload': { 'filetypes': ['html'] },
+" \}
 
 " cssサポート
 NeoBundleLazy 'hail2u/vim-css3-syntax'
@@ -626,11 +627,12 @@ set backupdir=$HOME/vimbackup     " バックアップファイルのディレ�
 set nocompatible                  " vi互換をオフする
 set directory=$HOME/vimbackup     " スワップファイル用のディレクトリを指定する
 set mouse=a                       " マウス操作をできるようにする
-set encoding=utf-8                " vim内部で使われる文字エンコーディングをutf-8に設定
-set fileformats=unix,dos,mac      " 想定される改行コードの指定する
 set clipboard=unnamed,autoselect  " ヤンクした文字は、システムのクリップボードに入れる
 set visualbell t_vb=              " エラービープ音を鳴らさない
 set noerrorbells
+set encoding=utf-8
+set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
+set fileformats=unix,dos,mac
 
 
 "クリップボードからノーマルモードの時に自動でペーストモードにしてインデントをしないようにする
