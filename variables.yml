@@ -69,6 +69,7 @@ homebrew_package_names:
   - go
   - heroku-toolbelt
   - git
+  - hugo
 login_item_names:
   - 'Alfred 3'
   - Dropbox
