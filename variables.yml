@@ -1,12 +1,8 @@
 dotfiles_repository: sa-inu/dotfiles
 user: saino
 dotfiles:
-  - .bash_profile
-  - .bashrc
   - .gitconfig
   - .gitignore
-  - .gvimrc
-  - .vimrc
   - .zshrc
 homebrew_cask_package_names:
   - 1password
