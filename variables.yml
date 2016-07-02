@@ -1,5 +1,4 @@
 dotfiles_repository: sa-inu/dotfiles
-user: saino
 dotfiles:
   - .bash_profile
   - .bashrc
