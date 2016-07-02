@@ -1,5 +1,5 @@
-dotfiles_repository: sa-inu/dotfiles
-user: saino
+dotfiles_repository: NaokiMochizuki/dotfiles
+user: naoki.mochizuki
 dotfiles:
   - .gitconfig
   - .gitignore
