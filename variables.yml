@@ -21,6 +21,7 @@ homebrew_cask_package_names:
   - hyperswitch
   - iterm2
   - karabiner
+  - mysqlworkbench
   - pophub
   - postman
   - rubymine
