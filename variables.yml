@@ -70,6 +70,7 @@ homebrew_package_names:
   - heroku-toolbelt
   - git
   - hugo
+  - mongodb
 login_item_names:
   - 'Alfred 3'
   - Dropbox
