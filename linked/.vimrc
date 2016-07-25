@@ -67,6 +67,14 @@ NeoBundle 'tyru/open-browser.vim'
 NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'tpope/vim-fugitive'
 
+" cサポート
+NeoBundleLazy 'vim-jp/cpp-vim', {
+            \ 'autoload' : {'filetypes' : 'cpp'}
+            \ }
+NeoBundleLazy 'osyo-manga/vim-stargate', {
+            \ 'autoload' : {'filetypes' : 'cpp'}
+            \ }
+
 
 " コメントアウト
 NeoBundle 'tomtom/tcomment_vim'
@@ -257,6 +265,12 @@ set laststatus=2
 set statusline=%F%m%r%h%w[%{&ff}]%=%{g:NyanModoki()}(%l,%c)[%P]
 let g:nyan_modoki_select_cat_face_number = 2
 let g:nayn_modoki_animation_enabled= 1
+
+" cpp-vim
+augroup cpp-path
+  autocmd!
+  autocmd FileType cpp setlocal path=.,/usr/include,/usr/local/include,/usr/lib/c++/v1
+augroup END
 
 " neocomplete
 "{{{
@@ -516,7 +530,7 @@ endif
 " 色
 """"""""""""""""""""""""""""""""""""""
 "{{{
-colorscheme obsidian2
+colorscheme hybrid
 set background=dark
 "コードの色分け
 syntax enable
