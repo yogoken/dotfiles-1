@@ -12,13 +12,14 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 " htmlサポート
-NeoBundleLazy 'mattn/emmet-vim', {
-\'autoload': { 'filetypes': ['html'] },
-\}
+NeoBundle 'mattn/emmet-vim'
 " バグのためコメントアウト
 " NeoBundle 'taichouchou2/html5.vim', {
 " \'autoload': { 'filetypes': ['html'] },
 " \}
+
+" 検索系
+NeoBundle "ctrlpvim/ctrlp.vim"
 
 " cssサポート
 NeoBundleLazy 'hail2u/vim-css3-syntax'
@@ -136,12 +137,12 @@ NeoBundle 'yuku-t/vim-ref-ri'
 NeoBundle 'guileen/vim-node-dict'
 
 " メソッド定義元へのジャンプ
-NeoBundle 'szw/vim-tags'
+" NeoBundle 'szw/vim-tags'
 
 " taglist.vim -- 画面左に関数や変数の一覧を出す
 " NeoBundle 'vim-scripts/taglist.vim'
 
-" ツリー構造で表示ZZ
+" ツリー構造で表示
 NeoBundle 'scrooloose/nerdtree'
 
 " 自動保存
@@ -171,6 +172,12 @@ NeoBundleCheck
 """"""""""""""""""""""""""""""""""""""
 " プラグインごとの設定
 """"""""""""""""""""""""""""""""""""""
+
+" ctrlp.vimの使い方
+" ctrl+p 起動
+" ctrl+t 新しいタブで開く
+" f5 ファイルの再読み込み
+
 " emmet
 "{{{
 let g:user_emmet_mode = 'iv'
