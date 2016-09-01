@@ -22,6 +22,12 @@ if [ -x "`which go`" ]; then
   export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 fi
 
+# docker
+export DOCKER_HOST=tcp://192.168.59.103:2376
+export DOCKER_CERT_PATH=/Users/saino/.boot2docker/certs/boot2docker-vm
+export DOCKER_TLS_VERIFY=1
+
+
 # Vi ライクな操作を有効にする
 bindkey -v
 
