@@ -44,7 +44,6 @@ NeoBundle 'burnettk/vim-angular'
 NeoBundle 'seratch/vim-angular-coffee'
 NeoBundle 'matthewsimo/angular-vim-snippets'
 NeoBundle 'leafgarland/typescript-vim'
-NeoBundle 'clausreinke/typescript-tools'
 NeoBundle 'jason0x43/vim-js-indent'
 
 " rubyサポート
