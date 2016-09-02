@@ -38,6 +38,8 @@ export LANG=ja_JP.UTF-8
 autoload -Uz colors
 colors
 
+# エディタの設定
+export EDITOR=/usr/local/bin/vim
 
 
 ####### プロンプト
