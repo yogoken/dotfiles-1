@@ -71,6 +71,8 @@ NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'cohama/agit.vim'
 NeoBundle 'rhysd/committia.vim'
+NeoBundle 'tpope/vim-fugitive.git'
+NeoBundle 'gregsexton/gitv.git'
 
 " cサポート
 NeoBundleLazy 'vim-jp/cpp-vim', {
