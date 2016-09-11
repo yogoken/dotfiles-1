@@ -374,8 +374,8 @@ nnoremap <silent><C-e> :NERDTreeToggle<CR>
 " show bookmark from the beginning
 let g:NERDTreeShowBookmarks=1
 " move to tabs
-nnoremap <C-n> gt
-nnoremap <C-p> gT
+nnoremap <C-h> gt
+nnoremap <C-l> gT
 
 " ファイル指定で開かれた場合はNERDTreeは表示しない
 if !argc()
