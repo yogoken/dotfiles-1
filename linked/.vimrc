@@ -70,6 +70,7 @@ NeoBundle 'tyru/open-browser.vim'
 NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'cohama/agit.vim'
+NeoBundle 'rhysd/committia.vim'
 
 " cサポート
 NeoBundleLazy 'vim-jp/cpp-vim', {
@@ -271,16 +272,46 @@ endfunction
 "}}}
 
 " nyan-modoki
-set laststatus=2
+set laststatus=2"{{{
 set statusline=%F%m%r%h%w[%{&ff}]%=%{g:NyanModoki()}(%l,%c)[%P]
 let g:nyan_modoki_select_cat_face_number = 2
-let g:nayn_modoki_animation_enabled= 1
+let g:nayn_modoki_animation_enabled= 1"}}}
 
 " cpp-vim
-augroup cpp-path
+augroup cpp-path"{{{
   autocmd!
   autocmd FileType cpp setlocal path=.,/usr/include,/usr/local/include,/usr/lib/c++/v1
-augroup END
+augroup END"}}}
+
+" committia
+" You can get the information about the windows with first argument as a dictionary."{{{
+"
+"   KEY              VALUE                      AVAILABILITY
+"-----------------------------------------------------------------------------------
+"   vcs            : vcs type (e.g. 'git')   -> all hooks
+"   edit_winnr     : winnr of edit window    -> ditto
+"   edit_bufnr     : bufnr of edit window    -> ditto
+"   diff_winnr     : winnr of diff window    -> ditto
+"   diff_bufnr     : bufnr of diff window    -> ditto
+"   status_winnr   : winnr of status window  -> all hooks except for 'diff_open' hook
+"   status_bufnr   : bufnr of status window  -> ditto
+let g:committia_min_window_width = 100  " これ以下の幅では左右分割しない
+let g:committia_hooks = {}
+function! g:committia_hooks.edit_open(info)
+    " Additional settings
+    setlocal spell
+
+    " If no commit message, start with insert mode
+    if a:info.vcs ==# 'git' && getline(1) ==# ''
+        startinsert
+    end
+
+    " Scroll the diff window from insert mode
+    " Map <C-n> and <C-p>
+    imap <buffer><C-j> <Plug>(committia-scroll-diff-down-half)
+    imap <buffer><C-k> <Plug>(committia-scroll-diff-up-half)
+
+endfunction"}}}
 
 " neocomplete
 "{{{
