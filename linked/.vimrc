@@ -601,9 +601,9 @@ nmap n nzz
 " かっこ補完
 """"""""""""""""""""""""""""""""""""""
 "{{{
-inoremap { {}<LEFT>
-inoremap [ []<LEFT>
-inoremap ( ()<LEFT>
+inoremap {<Enter> {}<Left><CR><ESC><S-o>
+inoremap [<Enter> []<Left><CR><ESC><S-o>
+inoremap (<Enter> ()<Left><CR><ESC><S-o>
 inoremap " ""<LEFT>
 inoremap ' ''<LEFT>
 vnoremap { "zdi^V{<C-R>z}<ESC>
