@@ -592,7 +592,7 @@ set smartcase   " 検索文字列に大文字が含まれている場合は区�
 set wrapscan    " 検索時に最後まで行ったら最初に戻る
 set incsearch   " インクリメンタルサーチを行う
 set hlsearch    " 検索結果をハイライト
-nnoremap <C-h><C-h> :nohlsearch<CR>
+" nnoremap <C-h><C-h> :nohlsearch<CR>
 " 検索結果を中央にくるようにする
 nmap n nzz
 "}}}
