@@ -69,6 +69,7 @@ NeoBundle 'tyru/open-browser.vim'
 " gitサポート
 NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'cohama/agit.vim'
 
 " cサポート
 NeoBundleLazy 'vim-jp/cpp-vim', {
