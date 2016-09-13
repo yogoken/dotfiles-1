@@ -573,7 +573,7 @@ endif
 " 色
 """"""""""""""""""""""""""""""""""""""
 "{{{
-colorscheme hybrid
+colorscheme antares
 set background=dark
 "コードの色分け
 syntax enable
