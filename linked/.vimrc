@@ -575,6 +575,9 @@ endif
 "{{{
 colorscheme antares
 set background=dark
+" カーソル行にアンダーラインを引く
+set cursorline
+highlight CursorLine cterm=underline ctermfg=NONE ctermbg=NONE
 "コードの色分け
 syntax enable
 
