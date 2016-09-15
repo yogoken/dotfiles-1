@@ -1,4 +1,4 @@
-dotfiles_repository: sa-inu/dotfiles
+dotfiles_repository: yogoken/dotfiles
 dotfiles:
   - .bash_profile
   - .bashrc
@@ -7,33 +7,6 @@ dotfiles:
   - .gvimrc
   - .vimrc
   - .zshrc
-homebrew_cask_package_names:
-  - 1password
-  - alfred
-  - atom
-  - dropbox
-  - evernote
-  - firefox
-  - github-desktop
-  - google-chrome
-  - google-japanese-ime
-  - gyazo
-  - hyperswitch
-  - iterm2
-  - karabiner
-  - mysqlworkbench
-  - pophub
-  - postman
-  - rubymine
-  - sequel-pro
-  - skitch
-  - skype
-  - slack
-  - spectacle
-  - sublime-text
-  - vagrant
-  - virtualbox
-  - webstorm
 homebrew_package_names:
   - caskroom/cask/brew-cask
   - cmake
@@ -72,10 +45,3 @@ homebrew_package_names:
   - hugo
   - mongodb
   - git-flow-avh
-login_item_names:
-  - 'Alfred 3'
-  - Dropbox
-  - HyperSwitch
-  - Karabiner
-  - PopHub
-  - Spectacle
