@@ -4,5 +4,5 @@ DOT_FILES=(.bashrc .bash_profile .zshrc .vimrc .gvimrc .gitconfig .gitignore .vi
 
 for file in ${DOT_FILES[@]}
 do
-  ln -s $HOME/src/github.com/sa-inu/dotfiles/linked/$file $HOME/$file
+  ln -s $HOME/src/github.com/yogoken/dotfiles/linked/$file $HOME/$file
 done
